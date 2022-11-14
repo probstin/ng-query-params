@@ -1,0 +1,10 @@
+<mat-form-field appearance="outline">
+    <mat-label>Environment</mat-label>
+    <mat-select [(value)]="selectedEnvironment" (selectionChange)="selectionChanged()">
+        <mat-option 
+            *ngFor="let environment of environments" 
+            [value]="environment?.uuid">
+            {{environment?.name}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>

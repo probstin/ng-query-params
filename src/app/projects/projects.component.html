@@ -1,0 +1,7 @@
+<h1>{{project.name}}</h1>
+<app-environment-selector 
+    [environments]="environments"
+    [selectedEnvironment]="selectedEnvironmentUuid"
+    (environmentSelected)="environmentSelected($event)">
+</app-environment-selector>
+<router-outlet></router-outlet>
